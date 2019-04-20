@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
 
 
     <ImageView
         android:id="@+id/imageCheese"
         android:layout_width="256dp"
-        android:layout_height="256dp"/>
+        android:layout_height="256dp"
+        android:src="@drawable/circle_cheese"
+        android:layout_centerInParent="true"/>
 
+    <!--Text displaying score should appear above the cheese, but to do so it needs to know where the-->
+    <!--cheese is first. So code for text must come after the cheese img-->
+    <TextView
+        android:
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="100"
+        android:layout_above="@id/imageCheese"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="42sp"/>
 
 
 
