@@ -26,8 +26,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 currentScore++;
-//                Toast.makeText(MainActivity.this, "Your score is now " + currentScore, Toast.LENGTH_SHORT).show();
                 textViewScore.setText(String.valueOf(currentScore));
+
+                if (currentScore % 10 == 0)
+                {
+                    Toast.makeText(MainActivity.this, "Bonus point!", Toast.LENGTH_SHORT).show();
+                    currentScore++;
+
+                    // Q for coach: how do I temporarily change the text colour like flash up as a different colour when they get a bonus point?
+                    //textViewScore.setTextColor(#335222);
+
+                }
             }
         });
     }
