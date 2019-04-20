@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
                     // Q for coach: how do I temporarily change the text colour like flash up as a different colour when they get a bonus point?
                     //textViewScore.setTextColor(#335222);
-
                 }
             }
         });

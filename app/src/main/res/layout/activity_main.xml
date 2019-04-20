@@ -8,8 +8,10 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity"    >
+
+<!--android:background="@drawable/tablecloth"-->
+    <!-- background photo by Erol Ahmed on Unsplash-->
 
 
     <ImageView
@@ -31,9 +33,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         android:textSize="42sp"/>
-
-
-
 
 
 
