@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                                       @Override
                                       public void onClick(View v) {
 
+                                          currentScore = 0;
                                           countDownTimer.start();
                                           isRunning = true;
 
