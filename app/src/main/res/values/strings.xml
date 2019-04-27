@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CheeseClicker</string>
+    <string name="buttonText"> Click here to start! </string>
+    <string name="timerText">30</string>
 </resources>
