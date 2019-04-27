@@ -11,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.text.BreakIterator;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -74,17 +73,17 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        countDownTimer = new CountDownTimer(30000, 1000) {
+        countDownTimer = new CountDownTimer(20000, 1000) {
 
             public void onTick(long millisUntilFinished) {
                 if (isRunning)
                 {
-                    timerText.setText("seconds remaining: " + millisUntilFinished / 1000);
+                    timerText.setText("Seconds remaining: " + millisUntilFinished / 1000);
                 }
             }
 
             public void onFinish() {
-                timerText.setText("done!");
+                timerText.setText("Time's up!");
                 isRunning = false;
                 hasTimerCompleted = true;
 
@@ -93,8 +92,6 @@ public class MainActivity extends AppCompatActivity {
 
         // separate logic in onCreate from the creation of resources
                 initResources();
-
-
 
     }
 }
