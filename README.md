@@ -2,6 +2,7 @@
 
 ## The Cheese Clicker 
 
+![Screenshot of the app](./cheese_clicker_screenshot.png)
 
 
 # Tools and Technologies Used
